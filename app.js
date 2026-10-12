@@ -7,9 +7,9 @@
   'use strict';
 
   // ---------- Config ----------
-  // Put your logo image at assets/logo.png. If it is missing, a text placeholder shows.
+  // Disney branding used in the navigation and home hero.
   var LOGO_SRC = 'assets/logo.png';
-  var LOGO_TEXT = '[App logo]';
+  var LOGO_TEXT = 'Disney+';
   var DURATION = 2580; // 43:00 in seconds
   var JOIN_CODE = 'K7Q4MZ';
 
@@ -137,7 +137,7 @@
   // ---------- Pieces ----------
   function logo(cls) {
     if (state.logoOk) {
-      return '<img class="logo-img ' + (cls || '') + '" src="' + LOGO_SRC + '" alt="App logo" data-logo>';
+      return '<img class="logo-img ' + (cls || '') + '" src="' + LOGO_SRC + '" alt="Disney+" data-logo>';
     }
     return '<span class="' + (cls || '') + '">' + esc(LOGO_TEXT) + '</span>';
   }

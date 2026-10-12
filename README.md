@@ -16,7 +16,7 @@ Partner activity is simulated for the demo.
 
 ## Logo
 
-Add your logo image as `assets/logo.png`. Until that file exists, a text placeholder shows. A dark, single-color logo is shown as white; for a full-color logo, remove the `filter` line under `.logo-img` in `styles.css`.
+The supplied teal Disney+ logo is stored as `assets/logo.png` and appears in the main navigation, the home hero, and the browser tab. Its transparent background lets the original teal artwork display cleanly on the prototype's dark background.
 
 ## Run locally
 

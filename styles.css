@@ -69,11 +69,14 @@ button:focus-visible, input:focus-visible { outline: 2px solid var(--blue-soft);
   letter-spacing: 0.02em;
   padding: 0;
 }
-.logo-img { display: block; width: auto; object-fit: contain; }
-/* Shows a dark, single-color logo as white on the dark background. Remove this filter for a full-color logo. */
-.logo-img { filter: brightness(0) invert(1); }
-.logo-img.logo-sm { height: 34px; max-width: 160px; }
-.logo-img.logo-lg { height: 72px; max-width: 320px; }
+.logo-img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+/* The source artwork has a square canvas; these wordmark-shaped frames remove its empty vertical space. */
+.logo-img.logo-sm { width: 105px; height: 57px; }
+.logo-img.logo-lg { width: 235px; height: 128px; }
 .nav { display: flex; gap: 24px; flex-wrap: wrap; flex: 1; }
 .nav button {
   border: none;
